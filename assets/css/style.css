@@ -24,3 +24,36 @@ header{
     height: 100vh;
     padding: 150px 0;
 }
+.whitecard{
+    height: 200px;
+    width: 100%;
+    background: white;
+    position: relative;
+    border-radius: 25px;
+    margin:20px;
+   
+}
+.whitecard:after {
+    content: '';
+    position: absolute;
+    top: 0; right: 0;
+    border-top: 80px solid #a103fc;
+    border-left: 80px solid white;
+    width: 0;
+}
+.cardHeading{
+    /* font-family: Tricky Jimmy; */
+font-size: 22px;
+font-weight: 400;
+line-height: 30px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+.cardContent{
+    height: 156px;
+left: 172px;
+top: 1787px;
+border-radius: nullpx;
+
+}
