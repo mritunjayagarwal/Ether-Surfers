@@ -60,19 +60,23 @@ border-radius: nullpx;
 /* playnow*/
 .playnow{ }
 .playnowHeading{
-    height: 115px;
-    width: 720px;
+    color: rgb(255, 255, 255);
+    font-weight: 400;;
+    
     left: 116px;
     top: 2496px;
     border-radius: nullpx;
 }
 .playnowContent{
-    height: 107px;
-    width: 400px;
+    color: rgb(255, 255, 255,0.82);
+   
+    width: 350px;
     left: 118px;
     top: 2674px;
     border-radius: nullpx;
 }
+
+
 
 
 /* Roadmap */
@@ -119,4 +123,21 @@ border-radius: nullpx;
     position: absolute;
     top: 570px;
     left: 650px;
+}
+
+/* tokenomics*/
+
+
+.totalSupply{
+    color:#FEC700;
+    margin-top: 10px;
+    margin-bottom:10px;
+    font-size: 26px;
+
+}
+.tokenAmount{
+    color:#FFFFFF;
+    margin-bottom: 30px;
+    font-size: 32px;
+
 }
