@@ -41,6 +41,7 @@ section{
     border-left: 80px solid white;
     width: 0;
 }
+
 .cardHeading{
     /* font-family: Tricky Jimmy; */
 font-size: 22px;
@@ -52,10 +53,27 @@ text-align: left;
 }
 .cardContent{
     height: 156px;
-left: 172px;
-top: 1787px;
+
 border-radius: nullpx;
 }
+
+/* playnow*/
+.playnow{ }
+.playnowHeading{
+    height: 115px;
+    width: 720px;
+    left: 116px;
+    top: 2496px;
+    border-radius: nullpx;
+}
+.playnowContent{
+    height: 107px;
+    width: 400px;
+    left: 118px;
+    top: 2674px;
+    border-radius: nullpx;
+}
+
 
 /* Roadmap */
 
