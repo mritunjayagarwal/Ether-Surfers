@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background: url(../img/RaIL.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.navbar li a{
+    color: #fff;
+}
+
+/* section{
+    padding: 100px 0;
+} */
+
+/* Hero section */
+
+.hero-section{
+    height: 100vh;
+    padding: 150px 0;
+}
