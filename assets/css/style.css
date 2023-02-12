@@ -18,29 +18,37 @@ section{
     padding: 50px 0;
 }
 
+.container{
+    max-width: 90%;
+    margin: 0 auto;
+}
+
 /* Hero section */
 
 .hero-section{
     height: 100vh;
     padding: 150px 0;
 }
-.whitecard{
-    height: 200px;
-    width: 100%;
-    background: white;
+.cardd {
     position: relative;
-    border-radius: 25px;
-    margin:20px;
-   
-}
-.whitecard:after {
-    content: '';
+    width: 80%;
+    padding: 1em 1.5em;
+    margin: 2em auto;
+    color: #000;
+    background: #fff;
+    display: flex;
+    border-radius: 20px;
+  }
+  
+  .cardd:before {
+    content: "";
     position: absolute;
-    top: 0; right: 0;
-    border-top: 80px solid #a103fc;
-    border-left: 80px solid white;
-    width: 0;
-}
+    top: 0;
+    right: 0;
+    border-width: 0 26px 26px 0;
+    border-style: solid;
+    border-color: #fff purple;
+  }
 
 .cardHeading{
     /* font-family: Tricky Jimmy; */
