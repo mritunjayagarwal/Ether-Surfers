@@ -1,34 +1,44 @@
-*{
+@font-face {
+    font-family: Tricky;
+    src: url(../../Tricky\ Jimmy.ttf);
+  }
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-header{
+header {
     background: url(../img/RaIL.svg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.navbar li a{
+.navbar li a {
     color: #fff;
 }
 
-section{
+section {
     padding: 50px 0;
 }
 
-.container{
+.sec-head{
+    font-family: Tricky;
+}
+
+.container {
     max-width: 90%;
     margin: 0 auto;
 }
 
 /* Hero section */
 
-.hero-section{
+.hero-section {
     height: 100vh;
     padding: 150px 0;
 }
+
 .cardd {
     position: relative;
     width: 80%;
@@ -38,9 +48,9 @@ section{
     background: #fff;
     display: flex;
     border-radius: 20px;
-  }
-  
-  .cardd:before {
+}
+
+.cardd:before {
     content: "";
     position: absolute;
     top: 0;
@@ -48,36 +58,34 @@ section{
     border-width: 0 26px 26px 0;
     border-style: solid;
     border-color: #fff purple;
-  }
-
-.cardHeading{
-    /* font-family: Tricky Jimmy; */
-font-size: 22px;
-font-weight: 400;
-line-height: 30px;
-letter-spacing: 0em;
-text-align: left;
-
 }
-.cardContent{
-    height: 156px;
 
-border-radius: nullpx;
+.cardd-heading {
+    font-family: Tricky;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+
 }
 
 /* playnow*/
-.playnow{ }
-.playnowHeading{
+.playnow {}
+
+.playnowHeading {
     color: rgb(255, 255, 255);
-    font-weight: 400;;
-    
+    font-weight: 400;
+    ;
+
     left: 116px;
     top: 2496px;
     border-radius: nullpx;
 }
-.playnowContent{
-    color: rgb(255, 255, 255,0.82);
-   
+
+.playnowContent {
+    color: rgb(255, 255, 255, 0.82);
+
     width: 350px;
     left: 118px;
     top: 2674px;
@@ -89,7 +97,7 @@ border-radius: nullpx;
 
 /* Roadmap */
 
-.roadmap{
+.roadmap {
     background: url(../img/roadmap.svg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -97,7 +105,7 @@ border-radius: nullpx;
     position: relative;
 }
 
-.point{
+.point {
     display: flex;
 }
 
@@ -109,25 +117,25 @@ border-radius: nullpx;
     width: 50%;
 } */
 
-.point-1{
+.point-1 {
     position: absolute;
     top: 100px;
     left: 550px;
 }
 
-.point-2{
+.point-2 {
     position: absolute;
     top: 250px;
     left: 750px;
 }
 
-.point-3{
+.point-3 {
     position: absolute;
     top: 400px;
     left: 300px;
 }
 
-.point-4{
+.point-4 {
     position: absolute;
     top: 570px;
     left: 650px;
@@ -136,15 +144,16 @@ border-radius: nullpx;
 /* tokenomics*/
 
 
-.totalSupply{
-    color:#FEC700;
+.totalSupply {
+    color: #FEC700;
     margin-top: 10px;
-    margin-bottom:10px;
+    margin-bottom: 10px;
     font-size: 26px;
 
 }
-.tokenAmount{
-    color:#FFFFFF;
+
+.tokenAmount {
+    color: #FFFFFF;
     margin-bottom: 30px;
     font-size: 32px;
 
