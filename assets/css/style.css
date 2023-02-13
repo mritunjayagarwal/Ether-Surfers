@@ -1,7 +1,14 @@
 @font-face {
     font-family: Tricky;
     src: url(../../Tricky\ Jimmy.ttf);
-  }
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../../montserrat.ttf);
+}
+
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap'); */
 
 * {
     margin: 0;
@@ -16,15 +23,32 @@ header {
 }
 
 .navbar li a {
+    font-family: 'Montserrat', 'sans-serif';
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
     color: #fff;
+
+}
+
+.navbar li a:hover {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
 }
 
 section {
     padding: 50px 0;
 }
 
-.sec-head{
+.sec-head {
     font-family: Tricky;
+    font-size: 90px;
+    font-weight: 400;
+    line-height: 45px;
+    letter-spacing: 0em;
+    text-align: left;
+
 }
 
 .container {
@@ -34,14 +58,72 @@ section {
 
 /* Hero section */
 
+.top-head {
+    font-family: Tricky;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff;
+    /* text-align: center; */
+
+}
+
+.top-desc {
+    font-family: Montserrat;
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.bear-head {
+    font-family: Tricky;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: right;
+    color: #fff;
+}
+
+.bear-desc {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: right;
+    color: rgba(255,255,255,1)
+}
+
+.mark-btn {
+    border-radius: 10px;
+    width: 80%;
+}
+
 .hero-section {
     height: 100vh;
     padding: 150px 0;
 }
 
+.card-head {
+    font-family: 'Tricky';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 57px;
+    line-height: 54px;
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+    color: #FFFFFF;
+}
+
 .cardd {
     position: relative;
-    width: 80%;
+    width: 90%;
     padding: 1em 1.5em;
     margin: 2em auto;
     color: #000;
@@ -67,29 +149,43 @@ section {
     line-height: 30px;
     letter-spacing: 0em;
     text-align: left;
+    color: #4B004E;
 
+}
+
+.cardd-desc {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
 }
 
 /* playnow*/
 .playnow {}
 
 .playnowHeading {
-    color: rgb(255, 255, 255);
+    font-family: Tricky;
+    font-size: 50px;
     font-weight: 400;
-    ;
+    line-height: 45px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff;
 
-    left: 116px;
-    top: 2496px;
-    border-radius: nullpx;
 }
 
 .playnowContent {
-    color: rgb(255, 255, 255, 0.82);
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff;
+    width: 50%;
 
-    width: 350px;
-    left: 118px;
-    top: 2674px;
-    border-radius: nullpx;
 }
 
 
@@ -144,17 +240,27 @@ section {
 /* tokenomics*/
 
 
-.totalSupply {
-    color: #FEC700;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-size: 26px;
+.toke-item {
+    margin-top: 50px;
+}
 
+.totalSupply {
+    font-family: Tricky;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 45px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FEC700;
 }
 
 .tokenAmount {
-    color: #FFFFFF;
-    margin-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
     font-size: 32px;
+    font-weight: 600;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff;
 
 }
