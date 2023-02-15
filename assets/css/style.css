@@ -200,11 +200,12 @@ section {
 /* Roadmap */
 
 .roadmap {
-    background: url(../img/roadmap.svg);
+    /* background: url(../img/roadmap.svg);
     background-size: cover;
-    background-repeat: no-repeat;
-    height: 120vh;
-    position: relative;
+    background-repeat: no-repeat; */
+    /* height: 120vh;
+    position: relative; */
+    padding: 0;
 }
 
 .point {
