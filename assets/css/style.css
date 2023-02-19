@@ -101,7 +101,7 @@ section {
 
 .mark-btn {
     border-radius: 10px;
-    width: 70%;
+    width: 100%;
     font-size: 25px !important;
     color: #fff;
     font-weight: 500;
@@ -121,7 +121,6 @@ section {
     line-height: 54px;
     text-align: center;
     margin: 0 auto;
-    width: 80%;
     color: #FFFFFF;
 }
 
