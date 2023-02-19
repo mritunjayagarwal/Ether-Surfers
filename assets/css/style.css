@@ -96,7 +96,7 @@ section {
     line-height: 27px;
     letter-spacing: 0em;
     text-align: right;
-    color: rgba(255,255,255,1)
+    color: rgba(255, 255, 255, 1)
 }
 
 .mark-btn {
@@ -111,6 +111,14 @@ section {
 .hero-section {
     height: 100vh;
     padding: 150px 0;
+}
+
+.hero-main {
+    width: 80%;
+    backdrop-filter: blur(4.5px);
+    border-radius: 25px;
+    background: rgba(96, 1, 82, 0.8);
+    padding: 20px;
 }
 
 .card-head {
@@ -268,5 +276,40 @@ section {
     letter-spacing: 0em;
     text-align: left;
     color: #fff;
+}
 
+.wavey-img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    width: 100%;
+}
+
+@media only screen and (max-width: 667px) {
+    .hero-section {
+        height: unset
+    }
+
+    .hero-main {
+        width: 100%;
+    }
+
+    .cardd {
+        width: 100%;
+    }
+
+    .img-sec {
+        display: none !important;
+    }
+
+    .wavey-img{
+        height: 100%;
+    }
+
+    .playnowContent {
+        width: 100%;
+    }
 }
