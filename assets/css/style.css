@@ -314,6 +314,9 @@ section {
 }
 
 @media only screen and (max-width: 667px) {
+    .boy-img{
+        margin-top: -70px;
+    }
 
     .top-head{
         font-size: 25px;
