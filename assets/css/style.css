@@ -308,8 +308,8 @@ section {
     width: 100%;
 }
 
-body {
-    overflow-x: hidden;
+html, body, section.horizontal {
+    overflow-x: hidden !important;
   }
   
   .principles{
