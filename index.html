@@ -113,7 +113,7 @@
         </section> -->
     </header>
 
-    <section id="card" class=" cardpage" style=" background: #530f70;">
+    <!-- <section id="card" class=" cardpage" style=" background: #530f70;">
         <div class=" container">
             <h1 class="text-center text-white card-head">Revolutionize your gaming experience with Subway Ecosystem
             </h1>
@@ -177,7 +177,7 @@
 
             </div>
         </div>
-    </section>
+    </section> -->
 
     <section id="playnow" class="playnow"
         style="position: relative; overflow-x: hidden; overflow-y: hidden; background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), radial-gradient(17.32% 34.78% at 20.71% 26.77%, rgba(202, 252, 1, 0.15) 0%, rgba(202, 252, 1, 0) 100%), linear-gradient(180deg, #550058 0%, #BD40C8 100%); background-size: cover; background-repeat: no-repeat;">
@@ -208,8 +208,8 @@
         </div>
     </section>
 
-
-    <!-- <section id="roadmap" class="roadmap">
+    <!-- 
+    <section id="roadmap" class="roadmap">
         <img src="./assets/img/roadmap.svg" class = "w-100 img-fluid roadmap-img" alt="">
         <img src="./assets/img/wavey.png" style = "position: absolute; z-index: -1;width: 100vw; height: 110%;top:-50px" alt="">
         <div class = "container">
@@ -261,29 +261,62 @@
         </div>
         
     </section> -->
-    <div class="main-wrapper" data-js="main-wrapper">
-        <div class="sections" data-js="sections-wrapper">
-            <section class="section" data-js="section">
-                <div class="section__heading">
-                    <h1 class="section__title">1</h1>
-                    <p>Scroll or drag horizontaly to explore</p>
-                </div>
 
-            </section>
-            <section class="section" data-js="section">
-                <h1 class="section__title">2</h1>
-            </section>
-            <section class="section" data-js="section">
-                <h1 class="section__title">3</h1>
-            </section>
-            <section class="section" data-js="section">
-                <h1 class="section__title">4</h1>
-            </section>
-            <section class="section" data-js="section">
-                <h1 class="section__title">5</h1>
-            </section>
+    <section class="principles">
+        <div class="principles__container content-container">
+
+            <div class="principles__scroll">
+                <h2 class="principles__title">We Follow <span class = "marked">Agile Principles</span></h2>
+                <div class="principles__counter">
+                    <span class="principles__current">1</span> /
+                    <span class="principles__total">10</span>
+                </div>
+                <div class="principles__list">
+                    <div class="principles__item">
+                        <span class="principles__number">01</span>
+                        <p class="principles__description">Our highest priority is to satisfy the customer through early and continuous delivery of valuable software.</p>
+                    </div>
+                    <div class="principles__item">
+                        <span class="principles__number">02</span>
+                        <p class="principles__description">Welcome changing requirements, even late in development. Agile process harness change for the customer’s competitive advantage.</p>
+                    </div>
+                    <div class="principles__item">
+                        <span class="principles__number">03</span>
+                        <p class="principles__description">Deliver working software frequently, from a couple of weeks to a couple of months, with a preference to the shorter timescale.</p>
+                    </div>
+                    <div class="principles__item">
+                        <span class="principles__number">04</span>
+                        <p class="principles__description">Business and developers must work together daily throughout the project</p>
+                    </div>
+                    <div class="principles__item">
+                        <span class="principles__number">05</span>
+                        <p class="principles__description">Build projects around motivated individuals. Give them the environment and support they  need, and trust them to get the job done.</p>
+                    </div>
+                    <div class="principles__item">
+                        <span class="principles__number">06</span>
+                        <p class="principles__description">The most efficient and effective method of conveying information to and within a development team is face-to-face conversation.</p>
+                    </div>
+                    <div class="principles__item">
+                        <span class="principles__number">07</span>
+                        <p class="principles__description">Working software is the primary measure of progress.</p>
+                    </div>
+                    <div class="principles__item">
+                        <span class="principles__number">08</span>
+                        <p class="principles__description">Agile processes promote sustainable development. The sponsors, developers and users should be able to maintain a constant pace indefinitely.</p>
+                    </div>
+                    <div class="principles__item">
+                        <span class="principles__number">09</span>
+                        <p class="principles__description">Continuous attention to technical excellence and good design enhances agility.</p>
+                    </div>
+                    <div class="principles__item">
+                        <span class="principles__number">10</span>
+                        <p class="principles__description">The best architectures, requirements, and designs emerge from self-organizing teams.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
+    
     <section id="tokenomics" class="tokenomics" style="background-color:#7d097c;">
         <div class="container">
             <h1 class="sec-head text-white">Tokenomics</h1>
@@ -367,124 +400,43 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
-    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/Draggable-latest-beta.js"></script>
-    <script src="https://www.greensock.com/js/src/plugins/ThrowPropsPlugin.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js'></script>
+    <script src='https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js'></script>
     <script>
+        gsap.registerPlugin(ScrollTrigger);
 
-        (function ($) {
+        const sections = gsap.utils.toArray(".principles__item");
+        let maxWidth = 0;
 
-            var types = ['DOMMouseScroll', 'mousewheel'];
-
-            if ($.event.fixHooks) {
-                for (var i = types.length; i;) {
-                    $.event.fixHooks[types[--i]] = $.event.mouseHooks;
-                }
-            }
-
-            $.event.special.mousewheel = {
-                setup: function () {
-                    if (this.addEventListener) {
-                        for (var i = types.length; i;) {
-                            this.addEventListener(types[--i], handler, false);
-                        }
-                    } else {
-                        this.onmousewheel = handler;
-                    }
-                },
-
-                teardown: function () {
-                    if (this.removeEventListener) {
-                        for (var i = types.length; i;) {
-                            this.removeEventListener(types[--i], handler, false);
-                        }
-                    } else {
-                        this.onmousewheel = null;
-                    }
-                }
-            };
-
-            $.fn.extend({
-                mousewheel: function (fn) {
-                    return fn ? this.bind("mousewheel", fn) : this.trigger("mousewheel");
-                },
-
-                unmousewheel: function (fn) {
-                    return this.unbind("mousewheel", fn);
-                }
+        const getMaxWidth = () => {
+            maxWidth = 0;
+            sections.forEach((section) => {
+                maxWidth += section.offsetWidth;
             });
-
-
-            function handler(event) {
-                var orgEvent = event || window.event, args = [].slice.call(arguments, 1), delta = 0, returnValue = true, deltaX = 0, deltaY = 0;
-                event = $.event.fix(orgEvent);
-                event.type = "mousewheel";
-
-                // Old school scrollwheel delta
-                if (orgEvent.wheelDelta) { delta = orgEvent.wheelDelta / 120; }
-                if (orgEvent.detail) { delta = -orgEvent.detail / 3; }
-
-                // New school multidimensional scroll (touchpads) deltas
-                deltaY = delta;
-
-                // Gecko
-                if (orgEvent.axis !== undefined && orgEvent.axis === orgEvent.HORIZONTAL_AXIS) {
-                    deltaY = 0;
-                    deltaX = -1 * delta;
-                }
-
-                // Webkit
-                if (orgEvent.wheelDeltaY !== undefined) { deltaY = orgEvent.wheelDeltaY / 120; }
-                if (orgEvent.wheelDeltaX !== undefined) { deltaX = -1 * orgEvent.wheelDeltaX / 120; }
-
-                // Add event and delta to the front of the arguments
-                args.unshift(event, delta, deltaX, deltaY);
-
-                return ($.event.dispatch || $.event.handle).apply(this, args);
-            }
-
-        })(jQuery);
-
-        // EXTEND jQuery
-        $.js = function (el) {
-            return $('[data-js=' + el + ']')
+            return maxWidth;
         };
 
-        var mainWrapper = $.js('main-wrapper');
-        var sectionWrapper = $.js('sections-wrapper');
+        getMaxWidth();
 
-        var vW = $(window).width();
-
-        mainWrapper.mousewheel(function (event, delta) {
-            this.scrollLeft -= (delta * 50);
-
-            event.preventDefault();
+        gsap.to(sections, {
+            x: () => `-${maxWidth - window.innerWidth}`,
+            ease: "none",
+            scrollTrigger: {
+                trigger: ".principles",
+                pin: true,
+                scrub: true,
+                end: () => `+=${maxWidth}`
+            }
         });
 
-        Draggable.create(mainWrapper, {
-            type: 'scrollLeft',
-            throwProps: true,
-            cursor: 'ew-resize'
-        });
-
-        function setWidth() {
-            var section = $.js('section');
-            var totalWidth = 0;
-
-            section.each(function () {
-                totalWidth += parseInt($(this).width(), 10);
+        sections.forEach((sct, i) => {
+            ScrollTrigger.create({
+                trigger: sct,
+                start: () => 'top top-=' + (sct.offsetLeft - window.innerWidth / 2) * (maxWidth / (maxWidth - window.innerWidth)),
+                end: () => '+=' + sct.offsetWidth * (maxWidth / (maxWidth - window.innerWidth)),
+                toggleClass: { targets: sct, className: "active" }
             });
-
-            sectionWrapper.css('width', '' + (totalWidth + 1) + 'px');
-        }
-
-        setWidth();
-
-        $(window).on('resize', function () {
-            setWidth();
-
         });
-
     </script>
 
 </body>
