@@ -16,6 +16,10 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: #530f70;
+}
+
 header {
     background: url(../img/RaIL.svg);
     background-size: cover;
@@ -271,6 +275,10 @@ section {
     font-family: Tricky;
 }
 
+.resp-roadmap{
+    display: none;
+}
+
 /* tokenomics*/
 
 
@@ -314,6 +322,7 @@ html, body, section.horizontal {
   
   .principles{
       padding: 60px 20px 120px;
+      display: none;
   }
   
   .principles__container{
@@ -425,9 +434,23 @@ html, body, section.horizontal {
 
     .roadmap {
         position: relative;
+        margin-top: -50px;
+        background: #fff;
+    }
+
+    .resp-roadmap{
+        display: block;
     }
 
     .roadmap-img {
         display: none;
+    }
+
+    .cardpage{
+        display: none;
+    }
+
+    .principles{
+        display: block;
     }
 }
