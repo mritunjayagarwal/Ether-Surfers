@@ -308,7 +308,7 @@ section {
     width: 100%;
 }
 
-section.horizontal {
+body {
     overflow-x: hidden;
   }
   

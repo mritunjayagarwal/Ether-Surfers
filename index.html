@@ -262,7 +262,7 @@
         
     </section> -->
 
-    <section class="principles">
+     <section class="principles">
         <div class="principles__container content-container">
 
             <div class="principles__scroll">
@@ -296,27 +296,10 @@
                         <span class="principles__number">06</span>
                         <p class="principles__description">The most efficient and effective method of conveying information to and within a development team is face-to-face conversation.</p>
                     </div>
-                    <div class="principles__item">
-                        <span class="principles__number">07</span>
-                        <p class="principles__description">Working software is the primary measure of progress.</p>
-                    </div>
-                    <div class="principles__item">
-                        <span class="principles__number">08</span>
-                        <p class="principles__description">Agile processes promote sustainable development. The sponsors, developers and users should be able to maintain a constant pace indefinitely.</p>
-                    </div>
-                    <div class="principles__item">
-                        <span class="principles__number">09</span>
-                        <p class="principles__description">Continuous attention to technical excellence and good design enhances agility.</p>
-                    </div>
-                    <div class="principles__item">
-                        <span class="principles__number">10</span>
-                        <p class="principles__description">The best architectures, requirements, and designs emerge from self-organizing teams.</p>
-                    </div>
                 </div>
             </div>
         </div>
     </section>
-    
     <section id="tokenomics" class="tokenomics" style="background-color:#7d097c;">
         <div class="container">
             <h1 class="sec-head text-white">Tokenomics</h1>
@@ -403,40 +386,40 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js'></script>
     <script src='https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js'></script>
     <script>
-        gsap.registerPlugin(ScrollTrigger);
+      gsap.registerPlugin(ScrollTrigger);
 
-        const sections = gsap.utils.toArray(".principles__item");
-        let maxWidth = 0;
+const sections = gsap.utils.toArray(".principles__item");
+let maxWidth = 0;
 
-        const getMaxWidth = () => {
-            maxWidth = 0;
-            sections.forEach((section) => {
-                maxWidth += section.offsetWidth;
-            });
-            return maxWidth;
-        };
+const getMaxWidth = () => {
+  maxWidth = 0;
+  sections.forEach((section) => {
+    maxWidth += section.offsetWidth;
+  });
+  return maxWidth;
+};
 
-        getMaxWidth();
+getMaxWidth();
 
-        gsap.to(sections, {
-            x: () => `-${maxWidth - window.innerWidth}`,
-            ease: "none",
-            scrollTrigger: {
-                trigger: ".principles",
-                pin: true,
-                scrub: true,
-                end: () => `+=${maxWidth}`
-            }
-        });
+gsap.to(sections, {
+  x: () => `-${maxWidth - window.innerWidth}`,
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".principles",
+    pin: true,
+    scrub: true,
+    end: () => `+=${maxWidth}`
+  }
+});
 
-        sections.forEach((sct, i) => {
-            ScrollTrigger.create({
-                trigger: sct,
-                start: () => 'top top-=' + (sct.offsetLeft - window.innerWidth / 2) * (maxWidth / (maxWidth - window.innerWidth)),
-                end: () => '+=' + sct.offsetWidth * (maxWidth / (maxWidth - window.innerWidth)),
-                toggleClass: { targets: sct, className: "active" }
-            });
-        });
+sections.forEach((sct, i) => {
+  ScrollTrigger.create({
+    trigger: sct,
+    start: () => 'top top-=' + (sct.offsetLeft - window.innerWidth/2) * (maxWidth / (maxWidth - window.innerWidth)),
+    end: () => '+=' + sct.offsetWidth * (maxWidth / (maxWidth - window.innerWidth)),
+    toggleClass: {targets: sct, className: "active"}
+  });
+});
     </script>
 
 </body>
