@@ -262,31 +262,33 @@
         
     </section> -->
 
-     <section class="principles">
+    <section class="principles" style=" background: #530f70;">
         <div class="principles__container content-container">
 
             <div class="principles__scroll">
-                <h2 class="principles__title">We Follow <span class = "marked">Agile Principles</span></h2>
-                <div class="principles__counter">
-                    <span class="principles__current">1</span> /
-                    <span class="principles__total">10</span>
-                </div>
+                <h2 class="principles__title">We Follow <span class="marked">Agile Principles</span></h2>
                 <div class="principles__list">
                     <div class="principles__item">
-                        <span class="principles__number">01</span>
-                        <p class="principles__description">Our highest priority is to satisfy the customer through early and continuous delivery of valuable software.</p>
+                        <h6 class="cardd-heading">Staking Rewards</h6>
+                        <p class="cardd-desc">By staking your SURFER tokens, you will be able to receive up to a 70%
+                            APY. The process will be straightforward and effortless, allowing you to grow your
+                            assets without the need for active trading.</p>
                     </div>
                     <div class="principles__item">
-                        <span class="principles__number">02</span>
-                        <p class="principles__description">Welcome changing requirements, even late in development. Agile process harness change for the customer’s competitive advantage.</p>
+                        <h6 class="cardd-heading">NFTs & Marketplace</h6>
+                        <p class="cardd-desc">Our multi-chain Surfer Marketplace will allow you to buy, sell, and
+                            trade NFTs and in-game assets directly. All transactions will be processed on a secure
+                            and reliable platform, giving you peace of mind while you explore the thrilling world of
                     </div>
                     <div class="principles__item">
                         <span class="principles__number">03</span>
-                        <p class="principles__description">Deliver working software frequently, from a couple of weeks to a couple of months, with a preference to the shorter timescale.</p>
+                        <p class="principles__description">Deliver working software frequently, from a couple of weeks
+                            to a couple of months, with a preference to the shorter timescale.</p>
                     </div>
                     <div class="principles__item">
                         <span class="principles__number">04</span>
-                        <p class="principles__description">Business and developers must work together daily throughout the project</p>
+                        <p class="principles__description">Business and developers must work together daily throughout
+                            the project</p>
                     </div>
                 </div>
             </div>
@@ -378,40 +380,40 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js'></script>
     <script src='https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js'></script>
     <script>
-      gsap.registerPlugin(ScrollTrigger);
+        gsap.registerPlugin(ScrollTrigger);
 
-const sections = gsap.utils.toArray(".principles__item");
-let maxWidth = 0;
+        const sections = gsap.utils.toArray(".principles__item");
+        let maxWidth = 0;
 
-const getMaxWidth = () => {
-  maxWidth = 0;
-  sections.forEach((section) => {
-    maxWidth += section.offsetWidth;
-  });
-  return maxWidth;
-};
+        const getMaxWidth = () => {
+            maxWidth = 0;
+            sections.forEach((section) => {
+                maxWidth += section.offsetWidth;
+            });
+            return maxWidth;
+        };
 
-getMaxWidth();
+        getMaxWidth();
 
-gsap.to(sections, {
-  x: () => `-${maxWidth - window.innerWidth}`,
-  ease: "none",
-  scrollTrigger: {
-    trigger: ".principles",
-    pin: true,
-    scrub: true,
-    end: () => `+=${maxWidth}`
-  }
-});
+        gsap.to(sections, {
+            x: () => `-${maxWidth - window.innerWidth}`,
+            ease: "none",
+            scrollTrigger: {
+                trigger: ".principles",
+                pin: true,
+                scrub: true,
+                end: () => `+=${maxWidth}`
+            }
+        });
 
-sections.forEach((sct, i) => {
-  ScrollTrigger.create({
-    trigger: sct,
-    start: () => 'top top-=' + (sct.offsetLeft - window.innerWidth/2) * (maxWidth / (maxWidth - window.innerWidth)),
-    end: () => '+=' + sct.offsetWidth * (maxWidth / (maxWidth - window.innerWidth)),
-    toggleClass: {targets: sct, className: "active"}
-  });
-});
+        sections.forEach((sct, i) => {
+            ScrollTrigger.create({
+                trigger: sct,
+                start: () => 'top top-=' + (sct.offsetLeft - window.innerWidth / 2) * (maxWidth / (maxWidth - window.innerWidth)),
+                end: () => '+=' + sct.offsetWidth * (maxWidth / (maxWidth - window.innerWidth) + 1000),
+                toggleClass: { targets: sct, className: "active" }
+            });
+        });
     </script>
 
 </body>
