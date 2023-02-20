@@ -161,7 +161,7 @@ section {
     position: relative;
     width: 90%;
     height: 100%;
-    padding: 1em 1.5em;
+    padding: 1.5em 1.5em 0 1.5em;
     margin: 2em auto;
     color: #000;
     background: #fff;
@@ -315,16 +315,55 @@ section {
 
 @media only screen and (max-width: 667px) {
 
+    .top-head{
+        font-size: 25px;
+    }
+
+    .top-desc{
+        font-size: 18px;
+    }
+
+    .mark-btn{
+        font-size: 18px !important;
+    }
+
+    .cardd {
+        width: 100%;
+    }
+
+    .card-head{
+        font-size: 30px;
+        line-height: 33px;
+    }
+
+    .cardd-heading{
+        font-size: 25px;
+    }
+
+    .cardd-desc{
+        font-size: 15px !important;
+    }
+
     .nav-item {
         margin: 10px 0 10px -10px;
     }
 
     .sec-head{
-        font-size: 50px;
+        font-size: 30px;
+        text-align: center;
     }
 
-    .card-head{
-        font-size: 50px;
+    .playnowContent {
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .totalSupply{
+        font-size: 25px;
+    }
+
+    .tokenAmount{
+        font-size: 25px;
     }
 
     .hero-section {
@@ -335,19 +374,11 @@ section {
         width: 100%;
     }
 
-    .cardd {
-        width: 100%;
-    }
-
     .img-sec {
         display: none !important;
     }
 
     .wavey-img{
         height: 100%;
-    }
-
-    .playnowContent {
-        width: 100%;
     }
 }
