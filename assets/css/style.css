@@ -360,6 +360,10 @@ html, body, section.horizontal {
     border-color: #fff purple;
 }
 
+.play-btn{
+    width: 250px;
+}
+
 @media only screen and (max-width: 667px) {
 
     .navbar li a{
@@ -369,6 +373,10 @@ html, body, section.horizontal {
     .buy-btn{
         width: 98%;
         margin-left: 15px
+    }
+
+    .play-btn{
+        width: 170px
     }
 
     .boy-img {
