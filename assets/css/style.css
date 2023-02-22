@@ -316,6 +316,10 @@ section {
     width: 100%;
 }
 
+.play-btns{
+    width: 30%;
+}
+
 html, body, section.horizontal {
     overflow-x: hidden !important;
   }
@@ -376,6 +380,10 @@ html, body, section.horizontal {
     .mark-btn {
         font-size: 18px !important;
     }
+
+    .play-btns{
+        width: 50%;
+    }    
 
     .cardd {
         width: 100% !important;
