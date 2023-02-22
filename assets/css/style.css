@@ -398,6 +398,11 @@ html, body, section.horizontal {
     .tokenAmount{
         font-size: 20px;
     }
+
+    
+    .wavey-img {
+        height: 100%;
+    }
 }
 
 @media only screen and (max-width: 667px) {
@@ -471,10 +476,6 @@ html, body, section.horizontal {
 
     .hero-section {
         height: unset
-    }
-
-    .wavey-img {
-        height: 100%;
     }
 
     .roadmap {
