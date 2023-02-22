@@ -338,8 +338,8 @@ html, body, section.horizontal {
   .principles__item {
     position: relative;
     min-width: 400px;
-    height: 250px;
-    padding: 1.5em 1.5em 0 1.5em;
+    height: 380px;
+    padding: 2.5em 1.5em 0 1.5em;
     margin: 2em 2em;
     color: #000;
     background: #fff;
