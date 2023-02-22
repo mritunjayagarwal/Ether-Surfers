@@ -359,10 +359,6 @@ html, body, section.horizontal {
     border-style: solid;
     border-color: #fff purple;
 }
-  
-  .principles__item:hover{
-    background-color: #1C2F6B;
-  }
 
 @media only screen and (max-width: 667px) {
 
