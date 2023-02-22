@@ -365,6 +365,16 @@ html, body, section.horizontal {
   }
 
 @media only screen and (max-width: 667px) {
+
+    .navbar li a{
+        font-size: 15px;
+    }
+
+    .buy-btn{
+        width: 98%;
+        margin-left: 15px
+    }
+
     .boy-img {
         margin-top: -70px;
     }
